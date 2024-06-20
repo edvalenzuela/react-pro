@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom"
 import logo from '../logo.svg'
+import { routes } from "./routes"
 
 export const Root = () => {
   return (
@@ -7,15 +8,13 @@ export const Root = () => {
       <nav>
         <img src={logo} alt="React logo" />
         <ul>
-          <li>
-            <NavLink className={ ({isActive}) => isActive ? 'nav-active' : ''} to="/lazy1">Lazy1</NavLink>
-          </li>
-          <li>
-            <NavLink className={ ({isActive}) => isActive ? 'nav-active' : ''} to="/lazy2">Lazy2</NavLink>
-          </li>
-          <li>
-            <NavLink className={ ({isActive}) => isActive ? 'nav-active' : ''} to="/lazy3">Lazy3</NavLink>
-          </li>
+          {
+            routes.map(({name, to}) => (
+              <li key={to}>
+                <NavLink to={to} className={ ({isActive}) => isActive ? 'nav-active' : ''}>{name}</NavLink>
+              </li>
+            ))
+          }
         </ul>
       </nav>
       <Outlet />
