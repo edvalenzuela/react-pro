@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Root } from './Root';
 
@@ -22,8 +21,6 @@ const router = createBrowserRouter([
 
 export const Navigation = () => {
   return (
-    <Suspense fallback={<p>LOADING...</p>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <RouterProvider router={router} />
   )
 }
