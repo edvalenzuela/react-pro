@@ -1,0 +1,24 @@
+
+.bg-dark{
+  background: rgb(56,56,56);
+}
+
+.text-white{
+  color: white;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.custom-image{
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid peru;
+  box-sizing: border-box;
+}
+
+.custom-buttons button, .custom-buttons div{
+  color: white;
+  border-color: white;
+}
