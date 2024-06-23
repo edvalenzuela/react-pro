@@ -1,4 +1,5 @@
-import { About, Home, Users } from "../pages";
+import { ShoppingPage } from "../02-component-patterns/pages/ShoppingPage";
+import { About, Users } from "../pages";
 
 type JSXComponent = () => JSX.Element
 
@@ -13,8 +14,8 @@ export const routes:Route[] = [
   {
     to: '/',
     path: '',
-    Component: Home,
-    name: 'Home'
+    Component: ShoppingPage,
+    name: 'ShoppingPage'
   },
   {
     to: '/about',
