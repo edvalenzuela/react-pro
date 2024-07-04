@@ -1,4 +1,4 @@
-import { About, Home, Users } from "../pages";
+import { RegisterPage, FormikBasicPage, FormikYupPage, FormikComponents, FormikAbstraction } from "../03-forms/pages";
 
 type JSXComponent = () => JSX.Element
 
@@ -13,19 +13,31 @@ export const routes:Route[] = [
   {
     to: '/',
     path: '',
-    Component: Home,
-    name: 'Home'
+    Component: RegisterPage,
+    name: 'Register Page'
   },
   {
-    to: '/about',
-    path: 'about',
-    Component: About,
-    name: 'About'
+    to: '/formik-basic-page',
+    path: 'formik-basic-page',
+    Component: FormikBasicPage,
+    name: 'Formik Basic Page'
   },
   {
-    to: '/users',
-    path: 'users',
-    Component: Users,
-    name: 'Users'
+    to: '/formik-yup',
+    path: 'formik-yup',
+    Component: FormikYupPage,
+    name: 'Formik Yup'
+  },
+  {
+    to: '/formik-components',
+    path: 'formik-components',
+    Component: FormikComponents,
+    name: 'Formik components'
+  },
+  {
+    to: '/formik-abstraction',
+    path: 'formik-abstraction',
+    Component: FormikAbstraction,
+    name: 'Formik abstraction'
   }
 ];
