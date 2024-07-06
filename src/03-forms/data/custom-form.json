@@ -1,0 +1,64 @@
+[
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "Eduardo",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required"
+      },
+      {
+        "type": "min",
+        "value": 5
+      },
+      {
+        "type": "max",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "Valenzuela",
+    "label": "Last Name",
+    "value": ""
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "johndoe@gmail.com",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type":"required"
+      },
+      {
+        "type":"email"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      {
+        "id": 1,
+        "label": "Adventure Island"
+      },
+      {
+        "id": 2,
+        "label": "Contra"
+      },
+      {
+        "id": 3,
+        "label": "Super Mario Bros"
+      }
+    ]
+  }
+]
